@@ -33,3 +33,5 @@ function changeBalloonSize(event) {
     }
     balloon.style.fontSize = newSize + "px";
     event.preventDefault(); // Prevent default arrow behavior
+    // Add keydown listener
+    window.addEventListener("keydown", changeBalloonSize);
