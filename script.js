@@ -43,5 +43,15 @@ function changeBalloonSize(event) {
     document.querySelectorAll("#tabbed-contents > div").forEach(tab => tab.style.display = "none");
     // Remove 'active' class from all links
     document.querySelectorAll("#tabbed-layout ul li a").forEach(link => link.classList.remove("active"));
-    
+   // Show clicked tab's content
+   let clickedTab = event.target.id.replace("Link", "");
+   document.getElementById(clickedTab).style.display = "block"
+// Add 'active' class to clicked link
+    event.target.classList.add("active");
+}
+// Set up tab listeners
+document.querySelectorAll("#tabbed-layout ul li a").forEach(link => {
+    link.addEventListener("click", showTab);
+});
+
         
