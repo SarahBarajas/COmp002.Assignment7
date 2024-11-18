@@ -31,3 +31,5 @@ function changeBalloonSize(event) {
     } else if (event.key === "ArrowDown") {
         newSize *= 0.9; // Decrease size
     }
+    balloon.style.fontSize = newSize + "px";
+    event.preventDefault(); // Prevent default arrow behavior
