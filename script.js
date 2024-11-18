@@ -57,6 +57,6 @@ document.querySelectorAll("#tabbed-layout ul li a").forEach(link => {
 // Show first tab by default
 document.getElementById("tab1").style.display = "block";
 document.getElementById("tab1Link").classList.add("active");
-
+}
 
         
