@@ -39,3 +39,9 @@ function changeBalloonSize(event) {
     // Show selected tab, hide others
     function showTab(event) {
         event.preventDefault(); // Prevent default link behavior
+    // Hide all tab contents
+    document.querySelectorAll("#tabbed-contents > div").forEach(tab => tab.style.display = "none");
+    // Remove 'active' class from all links
+    document.querySelectorAll("#tabbed-layout ul li a").forEach(link => link.classList.remove("active"));
+    
+        
