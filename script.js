@@ -35,3 +35,7 @@ function changeBalloonSize(event) {
     event.preventDefault(); // Prevent default arrow behavior
     // Add keydown listener
     window.addEventListener("keydown", changeBalloonSize);
+
+    // Show selected tab, hide others
+    function showTab(event) {
+        event.preventDefault(); // Prevent default link behavior
