@@ -20,4 +20,11 @@
 // to at minimum add listeners to each link and toggle the display of the tab contents.
 // Hint: display: none; hides an element, and display: block; will bring it
 
+//  change balloon size
+function changeBalloonSize(event) {
+    let balloon = document.getElementById("balloon");
+    let currentSize = window.getComputedStyle(balloon).fontSize;
+    let newSize = parseFloat(currentSize);
 
+    if (event.key === "ArrowUp") {
+        newSize *= 1.1; // Increase size
