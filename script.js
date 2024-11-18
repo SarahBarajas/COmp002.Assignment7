@@ -28,3 +28,6 @@ function changeBalloonSize(event) {
 
     if (event.key === "ArrowUp") {
         newSize *= 1.1; // Increase size
+    } else if (event.key === "ArrowDown") {
+        newSize *= 0.9; // Decrease size
+    }
